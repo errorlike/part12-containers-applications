@@ -1,0 +1,25 @@
+
+Script started on 2023-02-12 22:18:19+08:00 [TERM="xterm-256color" TTY="/dev/pts/7" COLUMNS="139" LINES="10"]
+[1m[7m%[27m[1m[0m                                                                                                                                          
+ 
+]2;yyx@ThinkBook-14p:~/code/part12-containers-applications]1;..-applications
+[0m[27m[24m[J[01;32m➜  [36m/home/yyx/code/part12-containers-applications[00m [01;34mgit:([31mmain[34m) [33m✗[00m [K[?1h=[?2004hdd[90mocker container run -it ubuntu bash[39m[35Dd[39mo[39mc[39mk[39me[39mr[39m [39mc[39mo[39mn[39mt[39ma[39mi[39mn[39me[39mr[39m [39mr[39mu[39mn[39m [39m-[39mi[39mt[39m [39mu[39mb[39mu[39mn[39mt[39mu[39m [39mb[39ma[39ms[39mh[?1l>[?2004l
+
+]2;docker container run -it ubuntu bash]1;docker[?2004h]0;root@372a72152565: /root@372a72152565:/# 
+[K]0;root@372a72152565: /root@372a72152565:/# mkdir /usr/sc rc/app
+[?2004l
+[?2004h]0;root@372a72152565: /root@372a72152565:/# cd !4 $
+[?2004l
+cd /usr/src/app
+[?2004h]0;root@372a72152565: /usr/src/approot@372a72152565:/usr/src/app# touch index.js
+[?2004l
+[?2004h]0;root@372a72152565: /usr/src/approot@372a72152565:/usr/src/app# exit
+[?2004l
+exit
+[1m[7m%[27m[1m[0m                                                                                                                                          
+ 
+]2;yyx@ThinkBook-14p:~/code/part12-containers-applications]1;..-applications
+[0m[27m[24m[J[01;32m➜  [36m/home/yyx/code/part12-containers-applications[00m [01;34mgit:([31mmain[34m) [33m✗[00m [K[?1h=[?2004hee[90mxit[39me[39mx[39mi[39mt[?1l>[?2004l
+
+]2;exit]1;exit
+Script done on 2023-02-12 22:19:08+08:00 [COMMAND_EXIT_CODE="0"]
