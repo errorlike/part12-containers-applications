@@ -1,0 +1,9 @@
+Script started on 2023-02-13 23:10:18+08:00 [TERM="xterm-256color" TTY="/dev/pts/4" COLUMNS="156" LINES="45"]
+[1m[7m%[27m[1m[0m                                                                                                                                                            ]2;yyx@ThinkBook-14p:~/code/part12-containers-applications/script-answers]1;..cript-answers[0m[27m[24m[J[01;32m➜  [36m/home/yyx/code/part12-containers-applications/script-answers[00m [01;34mgit:([31mmain[34m) [33m✗[00m [K[?1h=[?2004hdd[90mst -i b293562a330d[39m[18Dd[39ms[39mt[39m [39m-[39mi[39m [39mb[39m2[39m9[39m3[39m5[39m6[39m2[39ma[39m3[39m3[39m0[39md[?1l>[?2004l
+]2;docker container start -i b293562a330d]1;dst[?2004h]0;root@b293562a330d: /root@b293562a330d:/# [K]0;root@b293562a330d: /root@b293562a330d:/# node /usr/src/app/index.js 
+[?2004lhello world
+[?2004h]0;root@b293562a330d: /root@b293562a330d:/# [Kexit
+[?2004lexit
+[1m[7m%[27m[1m[0m                                                                                                                                                            ]2;yyx@ThinkBook-14p:~/code/part12-containers-applications/script-answers]1;..cript-answers[0m[27m[24m[J[01;32m➜  [36m/home/yyx/code/part12-containers-applications/script-answers[00m [01;34mgit:([31mmain[34m) [33m✗[00m [K[?1h=[?2004hee[90mxit[39me[39mx[39mi[39mt[?1l>[?2004l
+]2;exit]1;exit
+Script done on 2023-02-13 23:10:35+08:00 [COMMAND_EXIT_CODE="0"]
