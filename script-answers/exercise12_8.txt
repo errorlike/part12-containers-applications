@@ -1,0 +1,121 @@
+Script started on 2023-02-21 17:08:47+08:00 [TERM="xterm-256color" TTY="/dev/pts/7" COLUMNS="139" LINES="10"]
+[1m[7m%[27m[1m[0m                                                                                                                                           ]2;yyx@ThinkBook-14p:~/code/part12-containers-applications/todo-app/todo-backend]1;../todo-backend[0m[27m[24m[J[01;32m➜  [36m/home/yyx/code/part12-containers-applications/todo-app/todo-backend[00m [01;34mgit:([31mmain[34m) [33m✗[00m [K[?1h=[?2004hdd[90mocker container ls[39m[18Dd[39mo[39mc[39mk[39me[39mr[39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [13D[90m container ls[39m[13D[39m-[39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [12D[90mcompose -f docker-compose.dev.yml up -d[39m[39D[39mc[8D        [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [46Ddd[90mocker container ls[39m[18Dd[39mo[39mc[39mk[39me[39mr[39m [39mc[39mo[39mt[39m [39m [39m [39m [39m [39m [39m [39m [39m [9Da  [90mntainer ls[39m[10D [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [11D[90montainer ls[39m[11D [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [12D[90mcontainer ls[39m[12D[39me[39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [11D[90mxec -it 95637931b288 bash[39m[25D[39mx[39me[39mc[39m [39m-[39mi[39mt[39m [39m9[39m5[39m6[39m3[39m7[39m9[39m3[39m1[39mb[39m2[39m8[39m8[39m [39mb[39ma[39ms[39mh    [90mbash[39m[13D             [39m [39m [39m [39m [17D[90m95637931b288 bash[39m[17D[16D5               [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [32D598dc951eaa7[12Ddocker exec -it [7m598dc951eaa7[27m[12D[27m5[27m9[27m8[27md[27mc[27m9[27m5[27m1[27me[27ma[27ma[27m7[90m95637931b288 bash[39m[17D[39m9[39m5[39m6[39m3[39m7[39m9[39m3[39m1[39mb[39m2[39m8[39m8[39m [39mb[39ma[39ms[39mh    [25D                        [24D[90m95637931b288 bash[39m[17D[16D5               [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [32D598dc951eaa7[12Ddocker exec -it [7m598dc951eaa7[27m[12D[27m5[27m9[27m8[27md[27mc[27m9[27m5[27m1[27me[27ma[27ma[27m7[90m95637931b288 bash[39m[17D[39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [16Dmongosh[?1l>[?2004l
+]2;docker exec -it 598dc951eaa7 mongosh]1;docker]0;mongosh mongodb://127.0.0.1:27017/?directConnection=true&serverSelectionTimeoutMS=2000Current Mongosh Log ID:	63f48a48068c9a15a02c04f7
+Connecting to:		[1m[32mmongodb://127.0.0.1:27017/?directConnection=true&serverSelectionTimeoutMS=2000&appName=mongosh+1.6.0[0m
+Using MongoDB:		6.0.2
+[1m[33mUsing Mongosh[0m:		1.6.0
+
+For mongosh info see: [1mhttps://docs.mongodb.com/mongodb-shell/[0m
+
+
+To help improve our products, anonymous usage data is collected and sent to MongoDB periodically (https://www.mongodb.com/legal/privacy-policy).
+You can opt-out by running the [1mdisableTelemetry()[0m command.
+
+[1G[0J [1G[1G[0Jtest> [7Gshow dbs
+Uncaught [1m[31mMongoServerError[0m: command listDatabases requires authentication
+[1G[0Jtest> [7G
+(To exit, press Ctrl+C again or Ctrl+D or type .exit)
+[1G[0Jtest> [7G[1G[0Jtest> show dbs[15G[1G[0Jtest> [7Gexit
+[1m[7m%[27m[1m[0m                                                                                                                                           ]2;yyx@ThinkBook-14p:~/code/part12-containers-applications/todo-app/todo-backend]1;../todo-backend[0m[27m[24m[J[01;32m➜  [36m/home/yyx/code/part12-containers-applications/todo-app/todo-backend[00m [01;34mgit:([31mmain[34m) [33m✗[00m [K[?1h=[?2004hdocker exec -it 598dc951eaa7 mongosh -u root -p 123456[?1l>[?2004l
+]2;docker exec -it 598dc951eaa7 mongosh -u root -p 123456]1;docker]0;mongosh mongodb://<credentials>@127.0.0.1:27017/?directConnection=true&serverSelectionTimeoutMS=2000Current Mongosh Log ID:	63f48a6c177d280625c9513f
+Connecting to:		[1m[32mmongodb://<credentials>@127.0.0.1:27017/?directConnection=true&serverSelectionTimeoutMS=2000&appName=mongosh+1.6.0[0m
+Using MongoDB:		6.0.2
+[1m[33mUsing Mongosh[0m:		1.6.0
+
+For mongosh info see: [1mhttps://docs.mongodb.com/mongodb-shell/[0m
+
+[1G[0J [1G[1m[33m------[0m
+   [1m[33mThe server generated these startup warnings when booting[0m
+   2023-02-21T09:07:48.549+00:00: Using the XFS filesystem is strongly recommended with the WiredTiger storage engine. See http://dochub.mongodb.org/core/prodnotes-filesystem
+   2023-02-21T09:07:49.757+00:00: /sys/kernel/mm/transparent_hugepage/enabled is 'always'. We suggest setting it to 'never'
+   2023-02-21T09:07:49.757+00:00: vm.max_map_count is too low
+[1m[33m------[0m
+
+[1m[33m------[0m
+   Enable MongoDB's free cloud-based monitoring service, which will then receive and display
+   metrics about your deployment (disk utilization, CPU, operation statistics, etc).
+   
+   The monitoring data will be available on a MongoDB website with a unique URL accessible to you
+   and anyone you share the URL with. MongoDB may use this information to make product
+   improvements and to suggest MongoDB products and deployment options to you.
+   
+   To enable free monitoring, run the following command: db.enableFreeMonitoring()
+   To permanently disable this reminder, run the following command: db.disableFreeMonitoring()
+[1m[33m------[0m
+
+[1G[0Jtest> [7Gshow dbs
+[1madmin[0m          100.00 KiB
+[1mconfig[0m         108.00 KiB
+[1mlocal[0m           72.00 KiB
+[1mtodo-database[0m   56.00 KiB
+[1G[0Jtest> [7Guse todo-database
+switched to db todo-database
+[1G[0Jtodo-database> [16Gshow collections
+[1mtodos[0m
+[1G[0Jtodo-database> [16Gdb.todos.find({})
+[
+  {
+    _id: ObjectId("63f2413db87c57b2148c2df3"),
+    text: [32m'Write code'[39m,
+    done: [33mtrue[39m
+  },
+  {
+    _id: ObjectId("63f2413db87c57b2148c2df4"),
+    text: [32m'Learn about containerss'[39m,
+    done: [33mtrue[39m
+  }
+]
+[1G[0Jtodo-database> [16G[1G[0Jtodo-database> [16G[1G[0Jtodo-database> db.todos.find({})[33G[1G[0Jtodo-database> show collections[32G[1G[0Jtodo-database> db.todos.find({})[33G[1G[0Jtodo-database> db.todos.find({}[32G[1G[0Jtodo-database> db.todos.find({[31G[1G[0Jtodo-database> db.todos.find([30G[1G[0Jtodo-database> db.todos.find[29G[1G[0Jtodo-database> db.todos.fin[28G[1G[0Jtodo-database> db.todos.fi[27G[1G[0Jtodo-database> db.todos.f[26G[1G[0Jtodo-database> db.todos.[25Gin
+db.todos.insertMany                 db.todos.insertOne                  db.todos.initializeOrderedBulkOp
+db.todos.initializeUnorderedBulkOp
+
+[1G[0Jtodo-database> db.todos.in[27G
+db.todos.insertMany                 db.todos.insertOne                  db.todos.initializeOrderedBulkOp
+db.todos.initializeUnorderedBulkOp
+
+[1G[0Jtodo-database> db.todos.in[27Gsert
+db.todos.insertMany  db.todos.insertOne
+
+[1G[0Jtodo-database> db.todos.insert[31GOne[18D[2C[1C[5C[1C[9C[18D[2C[1C[5C[1C[9C[1G[0Jtodo-database> [16G[1G[0Jtodo-database> [16Gdb.todos.insertOne(
+[1G[0J... [5G  {
+[1G[0J... [5G    text: [32m'[39m[32mI[39m[32mn[39m[32mc[39m[32mr[39m[32me[39m[32ma[39m[32ms[39m[32me[39m [32mt[39m[32mh[39m[32me[39m [32mn[39m[32mu[39m[32mm[39m[32mb[39m[32me[39m[32mr[39m [32mo[39m[32mf[39m [32mt[39m[32mo[39m[32mo[39m[32ml[39m[32ms[39m [32mi[39m[32mn[39m [32mm[39m[32my[39m [32mt[39m[32mo[39m[32mo[39m[32ml[39m[32mb[39m[32me[39m[32ml[39m[32mt[39m[32m'[39m,
+[1G[0J... [5G    d[36mdo[39mdone: fals[33mfalse[39m
+[1G[0J... [5G  }
+[1G[0J... [5G)
+{
+  acknowledged: [33mtrue[39m,
+  insertedId: ObjectId("63f48c1f92848f2ea4eab2b0")
+}
+[1G[0Jtodo-database> [16G[1G[0Jtodo-database> db.todos.insertOne( { [33mtext[39m: [32m'Increase the number of tools in my toolbelt'[39m, [33mdone[39m: [33mfalse[39m })[105G[1G[0Jtodo-database> db.todos.find({})[33G[1G[0Jtodo-database> show collections[32G[1G[0Jtodo-database> db.todos.find({})[33G
+[
+  {
+    _id: ObjectId("63f2413db87c57b2148c2df3"),
+    text: [32m'Write code'[39m,
+    done: [33mtrue[39m
+  },
+  {
+    _id: ObjectId("63f2413db87c57b2148c2df4"),
+    text: [32m'Learn about containerss'[39m,
+    done: [33mtrue[39m
+  },
+  {
+    _id: ObjectId("63f48c1f92848f2ea4eab2b0"),
+    text: [32m'Increase the number of tools in my toolbelt'[39m,
+    done: [33mfalse[39m
+  }
+]
+[1G[0Jtodo-database> [16Gexit
+[1m[7m%[27m[1m[0m                                                                                                                                           ]2;yyx@ThinkBook-14p:~/code/part12-containers-applications/todo-app/todo-backend]1;../todo-backend[0m[27m[24m[J[01;32m➜  [36m/home/yyx/code/part12-containers-applications/todo-app/todo-backend[00m [01;34mgit:([31mmain[34m) [33m✗[00m [K[?1h=[?2004hnn[90mpm update[39m[9Dn[39mp[39mm[39m [39mr[39m [39m [39m [39m [39m [90mun dev[39m[39mu[39mn[39m [39md[39me[39mv[?1l>[?2004l
+]2;npm run dev]1;npm
+> todo-express-backend@0.0.0 dev
+> nodemon ./bin/www
+
+[33m[nodemon] 2.0.20[39m
+[33m[nodemon] to restart at any time, enter `rs`[39m
+[33m[nodemon] watching path(s): *.*[39m
+[33m[nodemon] watching extensions: js,mjs,json[39m
+[32m[nodemon] starting `node ./bin/www`[39m
+^C
+[1m[7m%[27m[1m[0m                                                                                                                                           ]2;yyx@ThinkBook-14p:~/code/part12-containers-applications/todo-app/todo-backend]1;../todo-backend[0m[27m[24m[J[01;31m➜  [36m/home/yyx/code/part12-containers-applications/todo-app/todo-backend[00m [01;34mgit:([31mmain[34m) [33m✗[00m [K[?1h=[?2004hee[90mxit[39me[39mx[39mi[39mt[?1l>[?2004l
+]2;exit]1;exit
+Script done on 2023-02-21 17:18:24+08:00 [COMMAND_EXIT_CODE="130"]
