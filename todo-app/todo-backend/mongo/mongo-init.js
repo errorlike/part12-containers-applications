@@ -1,10 +1,10 @@
 db.createUser({
-  user: 'the_username',
-  pwd: 'the_password',
+  user: 'test',
+  pwd: 'test',
   roles: [
     {
       role: 'dbOwner',
-      db: 'the_database',
+      db: 'todo-database',
     },
   ],
 });
