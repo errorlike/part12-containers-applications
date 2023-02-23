@@ -16,3 +16,7 @@ services:
     image: redis
     ports:
       - 6300:6379
+    command: [ 'redis-server', '--appendonly', 'yes' ]
+    volumes:
+      # Declare the volume
+      - ./redis_data:/data
