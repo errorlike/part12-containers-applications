@@ -1,0 +1,47 @@
+services:
+  frontend:
+    image: todo-frontend-dev
+    volumes:
+      - ./todo-frontend/:/usr/src/app
+    environment:
+      - REACT_APP_BACKEND_URL= http://localhost:8080/api
+    build:
+      context: ./todo-frontend
+      dockerfile: dev.Dockerfile
+    container_name: todo-frontend
+    depends_on:
+      - backend
+
+  redis:
+    extends:
+      file: ./todo-backend/docker-compose.dev.yml
+      service: redis
+  mongo:
+    extends:
+      file: ./todo-backend/docker-compose.dev.yml
+      service: mongo
+  backend:
+    image: todo-backend-dev
+    volumes:
+      - ./todo-backend/:/usr/src/app
+    build:
+      context: ./todo-backend
+      dockerfile: dev.Dockerfile
+    container_name: todo-backend
+    environment:
+      - REDIS_URL= redis://redis:6379
+      - MONGO_URL= MONGO_URL=mongodb://test:test@mongo:27017/todo-database
+    depends_on:
+      - redis
+      - mongo
+
+  nginx:
+    image: nginx
+    volumes:
+      - ./nginx.dev.conf:/etc/nginx/nginx.conf:ro
+    ports:
+      - 8080:80
+    container_name: todo-reverse
+    depends_on:
+      - frontend
+      - backend

@@ -29,7 +29,7 @@ services:
     ports:
       - 3100:3000
     environment:
-      - REDIS_URL= redis://172.26.227.173:6300
-      - MONGO_URL= MONGO_URL=mongodb://test:test@172.26.227.173:3456/todo-database
+      - REDIS_URL= redis://redis:6379
+      - MONGO_URL= MONGO_URL=mongodb://test:test@mongo:27017/todo-database
     volumes:
       - ./:/usr/src/app
